@@ -11,3 +11,7 @@ I did it here: https://www.reddit.com/r/VFIO/comments/hx5j8q/success_with_laptop
 [Passing through discrete GPU on optimus laptop](https://forum.level1techs.com/t/passing-through-discrete-gpu-on-optimus-laptop/133422)
 
 [Very hacky solution for Windows guest #2](https://github.com/jscinoz/optimus-vfio-docs/issues/2)
+
+
+[A little teaser of what is to come](https://forum.level1techs.com/t/a-little-teaser-of-what-is-to-come/121641)
+- [gofundme](https://www.gofundme.com/f/hardware-for-amd-kvm-development)
