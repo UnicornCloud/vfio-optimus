@@ -7,3 +7,7 @@ every laptop made in the last 5 years is muxless. That tutorial it outdated. If 
 
 I did it here: https://www.reddit.com/r/VFIO/comments/hx5j8q/success_with_laptop_gpu_passthrough_on_asus_rog
 '''
+
+
+
+[Very hacky solution for Windows guest #2](https://github.com/jscinoz/optimus-vfio-docs/issues/2)
