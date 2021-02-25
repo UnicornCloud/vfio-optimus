@@ -1,8 +1,7 @@
 #!/bin/bash
 
 rom=MSI-GTX1070-MaxQ.rom
-image=/home/me/uni/win-qemu.img
-image=/home/me/uni/img/ubuntu20.10.qcow2
+image=WindowsVM.qcow2
 if=ide
 iso=/home/me/uni/iso/19042.631.201119-0144.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso
 
@@ -35,10 +34,7 @@ qemu-system-x86_64 \
   -boot menu=on \
   -boot order=c \
   -drive id=disk0,if=$if,cache=none,format=qcow2,file=$image \
-  -drive file=$iso,index=1,media=cdrom \
 \
   -device pci-bridge,addr=12.0,chassis_nr=2,id=head.2 \
   -device usb-tablet \
-  -netdev type=tap,id=net0,ifname=tap0,script=tap_ifup,downscript=tap_ifdown,vhost=on \
-  -device virtio-net-pci,netdev=net0,addr=19.0,mac=52:54:BE:EF:9D:E3
-
+  -netdev user,id=user.0 -device e1000,netdev=user.0
