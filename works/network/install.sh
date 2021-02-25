@@ -38,6 +38,4 @@ qemu-system-x86_64 \
 \
   -device pci-bridge,addr=12.0,chassis_nr=2,id=head.2 \
   -device usb-tablet \
-  -netdev type=tap,id=net0,ifname=tap0,script=tap_ifup,downscript=tap_ifdown,vhost=on \
-  -device virtio-net-pci,netdev=net0,addr=19.0,mac=52:54:BE:EF:9D:E3
-
+  -netdev user,id=user.0 -device e1000,netdev=user.0
